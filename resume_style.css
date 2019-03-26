@@ -1,0 +1,52 @@
+body {
+    font-size: 14px;
+    color: black;
+    margin-left: 10%;
+    background-image:url(Pictures/back.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: auto;
+
+    min-width: 720px;
+    max-width: 900px;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+
+    text-align: left;
+}
+h3.name {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-left: 0;
+}
+h4.objective {
+    text-align: center;
+    font-weight: normal;
+}
+h5.permanentResident {
+    margin-top: 0;
+    font-size: 14px;
+    text-align: center;
+    margin-left: 0;
+}
+h3.headers {
+    text-align: center;
+    font-size: 17px;
+    margin-top: 30px;
+}
+p.infos { margin-left: 50px; }
+p.subInfos { margin-left: 80px; }
+h4.subheaders { font-size: 15px; }
+p.info { text-align: center;}
+a:visited { color: black; }
+a:hover { color: #5f98f4; }
+a { color: black; }
+ul li {
+    margin-left: 30px;
+    margin-bottom: 10px;
+}

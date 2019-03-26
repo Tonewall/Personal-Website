@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Lilita+One');
+body{
+    text-align: center;
+    background: url(Pictures/tTower.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Lilita One;
+    font-weight: 100;
+}
+
+h1{
+    display: inline-block; 
+    font-weight: 100;
+    font-size: 70px;
+    margin: 40px 0px 20px;
+    color: rgb(20, 54, 105);
+    padding: 8px;
+    background: rgba(153, 181, 214, 0.562);
+    border-radius: 10px;
+}
+
+h3 {
+    margin-top: 250px;
+    display: inline-block;
+    color: rgb(20, 54, 105);
+    font-size: 30px;
+    font-weight: 10;
+    padding: 8px;
+    background: rgba(118, 168, 226, 0.562);
+    border-radius: 10px;
+}
+
+table { 
+    margin-left:auto;
+    margin-right:auto; 
+}
+
+a{
+    display: inline-block;
+    padding: 8px;
+    background: rgba(118, 168, 226, 0.562);
+    border-radius: 10px;
+    text-decoration: none;
+}
+a.insta {
+    padding: 2px;
+}
+
+a:hover{
+    background: rgb(147, 183, 229);
+}
+
+#clockdiv{
+	font-family: Lilita One;
+	color: #fff;
+	display: block;
+	font-weight: 100;
+	text-align: center;
+    font-size: 60px;
+    opacity: 0; animation: navmenuX 1500ms forwards ease-in-out; z-index: 1; animation-delay: 1000ms;
+}
+
+
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 15px;
+	background: rgb(23, 108, 187);
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 15px;
+	background: rgb(26, 133, 196);
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
+
+table.socialMediaImages tr td img { animation: navmenuZ 1500ms forwards ease-in-out; }
+
+table.socialMediaImages tr td img:hover { animation: navmenuSM 800ms forwards ease-in-out; }
+
+@keyframes navmenuZ {
+    0% { opacity: 0;
+        transform: rotateZ(-40deg) translateZ(30px); }
+    25% { transform: rotateZ(20deg); }
+    50% { transform: rotateZ(-10deg); }
+    75% { transform: rotateZ(5deg); }
+    100% { opacity: 1;
+        transform: rotateZ(0deg) translateZ(0px); }
+}
+
+@keyframes navmenuSM {
+    0% { opacity: 1;
+        transform: rotateZ(-40deg) translateZ(30px); }
+    25% { transform: rotateZ(20deg); }
+    50% { transform: rotateZ(-10deg); }
+    75% { transform: rotateZ(5deg); }
+    100% { opacity: 1;
+        transform: rotateZ(0deg) translateZ(0px); }
+}
+@keyframes navmenuX {
+    0% { opacity: 1;
+        transform-origin: top center;
+        transform: rotateX(-90deg); }
+    25% { transform: rotateX(45deg); }
+    50% { transform: rotateX(-30deg); }
+    75% { transform: rotateX(20deg); }
+    100% { opacity: 1;
+        transform: rotateX(0deg); }
+}
