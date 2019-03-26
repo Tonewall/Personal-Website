@@ -93,7 +93,7 @@ window.onload = function myMove() {
     var pos = 0;
     var id = setInterval(frame, 10);
     function frame() {
-      if (pos == 350) {
+      if (pos == 300) {
         clearInterval(id);
       } else {
         pos++; 
