@@ -85,7 +85,7 @@ function click(clicked_id){
 
 
 };
-//for individual animations for each states
+//for individual animations for each states on loadup
 window.onload = function myMove() {
 
     var elem = document.getElementById("AK"); 
