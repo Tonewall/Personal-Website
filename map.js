@@ -86,7 +86,7 @@ function click(clicked_id){
 
 };
 //for individual animations for each states on loadup
-//mac tets
+//mac test
 window.onload = function myMove() {
 
     var elem = document.getElementById("AK"); 
