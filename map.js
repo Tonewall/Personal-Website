@@ -86,7 +86,7 @@ function click(clicked_id){
 
 };
 //for individual animations for each states on loadup
-//mac test 6
+//pc
 window.onload = function myMove() {
 
     var elem = document.getElementById("AK"); 
