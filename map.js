@@ -69,7 +69,7 @@ let WY = new State("WY", "Wyoming", "Cheyenne", 1869, 577737, 97813, 60214);
 const stateList = [AL, AK, AZ, AR, CA, CO, CT, DE, FL, GA, HI, ID, IL, IN, IA, KS, KY, LA, ME, MD, MA, MI, MN, MS, MO, MT, NE, NV, NH, NJ, NM, NY, NC, ND, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VT, VA, WA, WV, WI, WY];
 
 //fill in the informations to the page when clicked
-function click(clicked_id){
+function click(clicked_id){ 
     
     //finds the index of the state in the stateList using the clicked_id and state's id
     const index = stateList.findIndex(function(state, index) {
