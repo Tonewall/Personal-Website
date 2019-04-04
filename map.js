@@ -85,6 +85,7 @@ function click(clicked_id){
 
 
 };
+//pc
 //for individual animations for each states on loadup
 window.onload = function myMove() {
 
