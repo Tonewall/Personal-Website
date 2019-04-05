@@ -85,21 +85,3 @@ function click(clicked_id){
 
 
 };
-//for individual animations for each states on loadup
-//test
-window.onload = function myMove() {
-
-    var elem = document.getElementById("AK"); 
-    window.alert(elem);
-    var pos = 0;
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (pos == 350) {
-        clearInterval(id);
-      } else {
-        pos++; 
-        elem.style.top = pos + 'px'; 
-        elem.style.left = pos + 'px'; 
-      }
-    }
-};
