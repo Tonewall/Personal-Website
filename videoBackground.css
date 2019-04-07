@@ -19,11 +19,12 @@ body {
 }
 .container {
     max-width: 960px;
-    padding-left: 1rem;
+    padding-left: 20%;
     padding-right: 1rem;
     margin: auto;
     text-align: center;
 }
+
 
 .fullscreen-video-wrap {
     position: absolute;
@@ -45,7 +46,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: #22537085;
+    background: #225370bd;
     z-index: 1;
 }
 .header-content {
@@ -60,13 +61,28 @@ body {
     display: block;
     padding-bottom: 2rem;
 }
+p.faa {
+    left: 40px;
+    position: fixed;
+    bottom: 0px;
+    font-size: 15px;
+}
+p.faa a {
+    color: white;
+}
 .btn {
-    background: #34B3A0;
+    background: rgba(52, 179, 160, 0.596);
     color: white;
     font-size: 1.2rem;
     padding: 1rem 2rem;
+    margin: 20px;
     text-decoration: none;
+    border-radius: 10px;
 }
+.btn:hover {
+    background: #34B3A0;
+}
+
 
 @media(max-width:960px) {
     .container {
