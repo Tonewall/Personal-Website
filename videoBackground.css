@@ -19,7 +19,7 @@ body {
 }
 .container {
     max-width: 960px;
-    padding-left: 20%;
+    padding-left: 1rem;
     padding-right: 1rem;
     margin: auto;
     text-align: center;
@@ -51,6 +51,7 @@ body {
 }
 .header-content {
     z-index: 2;
+    margin-left: 25%;
 }
 .header-content h1 {
     font-size: 50px;
