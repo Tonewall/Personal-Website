@@ -52,6 +52,9 @@ body {
 .header-content {
     z-index: 2;
     margin-left: 25%;
+    padding: 30px;
+    border-radius: 2px;
+    background: rgba(98, 190, 177, 0.637);
 }
 .header-content h1 {
     font-size: 50px;
@@ -72,16 +75,15 @@ p.faa a {
     color: white;
 }
 .btn {
-    background: rgba(52, 179, 160, 0.596);
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 1.2rem;
-    padding: 1rem 2rem;
+    padding: 7px 13px;
     margin: 20px;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .btn:hover {
-    background: #34B3A0;
+    background: rgb(124, 219, 205);
 }
 
 
