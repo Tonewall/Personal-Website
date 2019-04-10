@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Lilita+One');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 body{
     text-align: center;
-    background-color: rgb(29, 120, 223);
-    font-family: Lilita One;
+    background-color: rgb(75, 119, 141);
+    font-family: Oswald;
     font-weight: 100;
 }
 .section {
@@ -22,18 +22,19 @@ h1{
     font-size: 70px;
     margin: 40px 0px 20px;
     color: rgb(20, 54, 105);
-    padding: 8px;
+    padding: 3px;
+    padding-left: 16px;
+    padding-right: 16px;
     background: rgba(153, 181, 214, 0.562);
     border-radius: 10px;
 }
 .state {
-    background-image: 
     text-align: center;
     z-index: 1;
-    fill: #53c47e96;
+    fill: #6aaf89;
 }
 .state:hover {
-    fill: #86c5b0;
+    fill: #7cc9af;
 }
 
 #stateInfo {
