@@ -46,14 +46,14 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: #225370bd;
+    background: #2e5d79a6;
     z-index: 1;
 }
 .header-content {
     z-index: 2;
     margin-left: 25%;
     padding: 30px;
-    border-radius: 2px;
+    border-radius: 5px;
     background: rgba(98, 190, 177, 0.637);
 }
 .header-content h1 {
