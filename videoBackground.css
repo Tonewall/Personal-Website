@@ -54,7 +54,7 @@ body {
     margin-left: 25%;
     padding: 30px;
     border-radius: 5px;
-    background: rgba(98, 190, 177, 0.637);
+    background: rgba(121, 219, 219, 0.637);
 }
 .header-content h1 {
     font-size: 50px;
@@ -74,6 +74,7 @@ p.faa {
 p.faa a {
     color: white;
 }
+
 .btn {
     color: rgb(255, 255, 255);
     font-size: 1.2rem;
