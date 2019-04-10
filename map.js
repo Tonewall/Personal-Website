@@ -9,6 +9,7 @@ class State {
         this.size = size;
         this.density = (population/size).toFixed(2);
         this.median = median;
+        let highlighted = false;
     }
 }
 
@@ -68,6 +69,9 @@ let WY = new State("WY", "Wyoming", "Cheyenne", 1869, 577737, 97813, 60214);
 //array of state objects to search through with clicked_id
 const stateList = [AL, AK, AZ, AR, CA, CO, CT, DE, FL, GA, HI, ID, IL, IN, IA, KS, KY, LA, ME, MD, MA, MI, MN, MS, MO, MT, NE, NV, NH, NJ, NM, NY, NC, ND, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VT, VA, WA, WV, WI, WY];
 
+let clickedStates = [];
+let ind = 0;
+
 //fill in the informations to the page when clicked
 function click(clicked_id){
     
@@ -77,6 +81,17 @@ function click(clicked_id){
     });
 
     const state = stateList[index];
+
+    if (!state.highlighted) {
+        state.highlighted = true;
+        document.getElementById(clicked_id).style.fill = "#5ce786";
+        ind++;
+        clickedStates[index] = state;
+    } else {
+        state.highlighted = false;
+        document.getElementById(clicked_id).style.fill = "#6aaf89";
+        ind--;
+    }
 
     //innerHTML to write onto a field
     document.getElementById("flag").src = "Pictures/Flags/"+ state.id + ".png";
