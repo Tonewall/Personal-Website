@@ -110,8 +110,12 @@ function click(clicked_id){
             }
         }
     }
-    document.getElementById("myText").value = textValue;
-    document.getElementById("myText").size = textValue.length - 3;
+    if(textValue == "") {
+        document.getElementById("myText").innerHTML = "Selected States: None";
+    } else {
+        document.getElementById("myText").innerHTML = "Selected States: " + textValue;
+    }
+
 
     //innerHTML to write onto a field
     document.getElementById("flag").src = "Pictures/Flags/"+ state.id + ".png";
