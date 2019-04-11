@@ -81,17 +81,37 @@ function click(clicked_id){
     });
 
     const state = stateList[index];
+    let textValue = "";
 
     if (!state.highlighted) {
         state.highlighted = true;
         document.getElementById(clicked_id).style.fill = "#5ce786";
+        clickedStates[ind] = state;
+
         ind++;
-        clickedStates[index] = state;
     } else {
         state.highlighted = false;
         document.getElementById(clicked_id).style.fill = "#6aaf89";
-        ind--;
+        clickedStates
+        for(let i = 0; i < clickedStates.length; i++) {
+            if(clickedStates[i] == state) {
+                clickedStates[i] = null;
+                break;
+            }
+        }
     }
+
+    for(let i = 0; i < clickedStates.length; i++) {
+        if(clickedStates[i] != null) {
+            if(textValue == "") {
+                textValue = clickedStates[i].name;
+            } else {
+                textValue += ",  " + clickedStates[i].name;
+            }
+        }
+    }
+    document.getElementById("myText").value = textValue;
+    document.getElementById("myText").size = textValue.length - 3;
 
     //innerHTML to write onto a field
     document.getElementById("flag").src = "Pictures/Flags/"+ state.id + ".png";
