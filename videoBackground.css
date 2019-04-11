@@ -1,6 +1,10 @@
 *{
     box-sizing: border-box;
 }
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+}
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -88,9 +92,20 @@ p.faa a {
 }
 
 
-@media(max-width:960px) {
+/* @media(max-width:960px) {
     .container {
         padding-right: 3rem;
         padding-left: 3rem;
+    }
+} */
+
+@media screen and (min-width:320px) and (max-width:850px){
+    /* .container {
+        padding-right: 0rem;
+        padding-left: 0rem;
+    } */
+    body{
+        transform: scale(1.1);
+        transform-origin: 0 0;
     }
 }
