@@ -23,8 +23,8 @@ body {
 }
 .container {
     max-width: 960px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0;
+    padding-right: 5%;
     margin: auto;
     text-align: center;
 }
@@ -32,10 +32,10 @@ body {
 
 .fullscreen-video-wrap {
     position: absolute;
-    top: -40vh;
+    top: -30vh;
     left: 0;
     width: 100%;
-    height: 140vh;
+    height: 130vh;
     overflow: hidden;
 }
 
@@ -92,20 +92,47 @@ p.faa a {
 }
 
 
-/* @media(max-width:960px) {
-    .container {
-        padding-right: 3rem;
-        padding-left: 3rem;
-    }
-} */
 
-@media screen and (min-width:320px) and (max-width:850px){
-    /* .container {
-        padding-right: 0rem;
-        padding-left: 0rem;
-    } */
+/*mobile compatibility*/
+@media screen and (min-width:320px) and (max-width:650px){
+    .container {
+        padding-right: 5%;
+        padding-left: 2%;
+    }
     body{
-        transform: scale(1.1);
-        transform-origin: 0 0;
+        font-size: 2px;
+        line-height: 1;
+    }
+    .header-content {
+        margin-top: -100px;
+        margin-left: 5%;
+        border-radius: 5px;
+
+        padding: 8px;
+    }
+    .header-content h1 {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .header-content p {
+        font-size: 15px;
+        padding-bottom: 2rem;
+    }
+    p.faa {
+        left: 5%;
+        position: fixed;
+        bottom: 0px;
+        font-size: 13px;
+    }
+    .fullscreen-video-wrap {
+        position: absolute;
+        top: -20vh;
+        left: -70vw;
+        width: 170vw;
+        height: 120vh;
+        overflow: hidden;
+    }
+    .fullscreen-video-wrap video {
+        height: 100%;
     }
 }
