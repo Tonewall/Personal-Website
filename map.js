@@ -71,6 +71,15 @@ const stateList = [AL, AK, AZ, AR, CA, CO, CT, DE, FL, GA, HI, ID, IL, IN, IA, K
 
 let clickedStates = [];
 let ind = 0;
+function loadjs() {
+    if($(window).width() < 650) {
+        document.getElementById("state").setAttribute("width",  "500");
+        document.getElementById("state").setAttribute("height",  "250");
+        
+    }
+    console.log($(window).width());
+}
+
 
 //fill in the informations to the page when clicked
 function click(clicked_id){

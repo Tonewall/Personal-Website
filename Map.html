@@ -3,14 +3,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Map of America">
-    <meta name="viewport" content="width=devie-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="tony, choi, personal, website, home, html, css, javascript, map, america, states, population">
     <meta name="author" content="Tony Choi">
     <link rel="icon" href="Pictures/gt.png">
     <title>US Map</title>
 </head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 
-<body>
+
+<body onload="loadjs()">
     <link rel="stylesheet" href="map.css">
 	<h1 class="title">Select A State</h1>
 	<div class="map">
@@ -25,8 +27,7 @@
 			<svg
 			id="state"
 			class="state"
-			width="1000"
-			height="625"
+
 			viewBox="0 0 1280 791">
 				<g
 					class="state">
